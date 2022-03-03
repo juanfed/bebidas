@@ -1,0 +1,3 @@
+// Consulta Api
+export const CONSULTA_API_SUCCESS = 'CONSULTA_API_SUCCESS';
+export const CONSULTA_API_ERROR = 'CONSULTA_API_ERROR';
