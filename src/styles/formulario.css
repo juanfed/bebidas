@@ -1,0 +1,24 @@
+.formulario{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0rem;
+    justify-content:center;
+    align-items: center;
+}
+
+.div{
+    width: 14rem;
+}
+
+.input{
+    margin: 1rem 0rem;
+}
+.input2{
+    display: flex;
+    flex-direction: column;
+}
+/*para el boton*/
+
+.buton{
+    margin: 1rem 0rem;
+}
