@@ -1,17 +1,19 @@
 import React, {useEffect, useState} from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { consultarCategoriasAction } from '../redux/actions/CategoriasAction';
+import { categoriasAction } from '../redux/actions/CategoriasAction';
 import '../styles/formulario.css'
 
 const Formulario = () => {
     const [ busqueda, setBusqueda] = useState({
         nombre: '',
         categoria: ''
-    })
+    });
+
+    const {recetas} = useSelector((state) => state.recetas);
     const {categorias} = useSelector((state) => state.categorias);
     const dispatch = useDispatch();
     useEffect(()=>{
-        dispatch(consultarCategoriasAction())
+        dispatch(categoriasAction())
     // eslint-disable-next-line react-hooks/exhaustive-deps
     },[])
 
