@@ -3,4 +3,4 @@ import reducer from './consultarCategoriaReducers';
 
 export default combineReducers({
     categorias: reducer
-})
+});

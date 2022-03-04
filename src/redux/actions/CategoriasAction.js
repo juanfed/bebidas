@@ -6,7 +6,7 @@ export  const consultarCategoriasAction = () =>{
         try{
             const result = await axios.get(`https://www.thecocktaildb.com/api/json/v1/1/list.php?c=list`);
             dispatch(consultarCategorias(result.data.drinks))
-            console.log(result)
+            //console.log(result.data.drinks)
         }
         catch(error){
             dispatch(consultaError(Error));
